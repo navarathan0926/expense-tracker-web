@@ -15,8 +15,8 @@ export default function DashboardPage() {
     }
 
     const cards = [
-        { title: "Total Expenses", value: `$${summary?.totalAmount.toFixed(2) || "0.00"}`, icon: DollarSign, color: "text-blue-400" },
-        { title: "This Month", value: `$${summary?.totalThisMonth.toFixed(2) || "0.00"}`, icon: TrendingUp, color: "text-emerald-400" },
+        { title: "Total Expenses", value: `${summary?.totalAmount.toFixed(2) || "0.00"}`, icon: DollarSign, color: "text-blue-400" },
+        { title: "This Month", value: `${summary?.totalThisMonth.toFixed(2) || "0.00"}`, icon: TrendingUp, color: "text-emerald-400" },
         { title: "Highest Category", value: summary?.highestCategory || "N/A", icon: Trophy, color: "text-amber-400" },
     ];
 
@@ -56,7 +56,7 @@ export default function DashboardPage() {
                             <div key={category}>
                                 <div className="flex justify-between text-sm mb-1">
                                     <span className="text-slate-300">{category}</span>
-                                    <span className="text-white font-mono font-bold">${amount.toFixed(2)}</span>
+                                    <span className="text-white font-mono font-bold">{amount.toFixed(2)}</span>
                                 </div>
                                 <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
                                     <div

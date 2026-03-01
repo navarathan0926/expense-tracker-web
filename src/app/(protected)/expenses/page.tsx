@@ -153,7 +153,7 @@ export default function ExpensesPage() {
                                             {expense.categoryName}
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-white font-bold font-mono text-lg">${expense.amount.toFixed(2)}</td>
+                                    <td className="px-6 py-4 text-white font-bold font-mono text-lg">{expense.amount.toFixed(2)}</td>
                                     <td className="px-6 py-4 text-right">
                                         <button
                                             onClick={() => handleDelete(expense.id)}
